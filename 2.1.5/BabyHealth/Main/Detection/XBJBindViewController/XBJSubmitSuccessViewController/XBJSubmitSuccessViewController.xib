@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBJSubmitSuccessViewController">
+            <connections>
+                <outlet property="confirmBtn" destination="d9Y-5O-yzQ" id="aQO-Ma-9iI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chenggong" translatesAutoresizingMaskIntoConstraints="NO" id="gGy-Mj-3Zm">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Wpq-Iq-eSi"/>
+                        <constraint firstAttribute="width" constant="200" id="eW2-Le-0q0"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9Y-5O-yzQ">
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.45098039220000002" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="228" id="Ywv-rV-VRe"/>
+                        <constraint firstAttribute="height" constant="54" id="wVc-zG-DRW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                            <integer key="value" value="27"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmBtnAction:" destination="-1" eventType="touchUpInside" id="aOJ-lH-Yki"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="进度条_提交成功" translatesAutoresizingMaskIntoConstraints="NO" id="icC-g5-tSz">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="God-JH-tHx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请保持电话畅通，工作人员将在50分钟内上门收样。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS7-BB-1bQ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="I2A-Y6-YL9"/>
+                        <constraint firstAttribute="width" constant="285" id="YZh-cR-50F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.91372549020000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="icC-g5-tSz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="62" id="IBK-8b-Rdq"/>
+                <constraint firstAttribute="trailing" secondItem="icC-g5-tSz" secondAttribute="trailing" constant="63" id="Mwh-Lv-cis"/>
+                <constraint firstItem="d9Y-5O-yzQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cXP-5c-yOk"/>
+                <constraint firstItem="gGy-Mj-3Zm" firstAttribute="top" secondItem="icC-g5-tSz" secondAttribute="bottom" constant="30" id="dyt-pD-EEy"/>
+                <constraint firstItem="icC-g5-tSz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="gu7-FA-mIB"/>
+                <constraint firstAttribute="bottom" secondItem="d9Y-5O-yzQ" secondAttribute="bottom" constant="69" id="iqH-ED-IL2"/>
+                <constraint firstItem="gGy-Mj-3Zm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oDB-6Z-q7l"/>
+                <constraint firstItem="SS7-BB-1bQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="se8-Vj-WuL"/>
+                <constraint firstItem="SS7-BB-1bQ" firstAttribute="top" secondItem="gGy-Mj-3Zm" secondAttribute="bottom" constant="36" id="zOL-aV-rBl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="542" y="261"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chenggong" width="200" height="200"/>
+        <image name="进度条_提交成功" width="275" height="50"/>
+    </resources>
+</document>

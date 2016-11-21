@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XBJAddDurgRecordCell" rowHeight="88" id="KGk-i7-Jjw" customClass="XBJAddDurgRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="药品名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpJ-su-A3e">
+                        <rect key="frame" x="10" y="12" width="56" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cOv-cZ-dds"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-RO-tQo">
+                        <rect key="frame" x="76" y="14" width="212" height="17"/>
+                        <color key="textColor" red="0.60784313729999995" green="0.54901960780000003" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="计量：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mN-QY-S01">
+                        <rect key="frame" x="10" y="55" width="42" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="jRl-Ou-sVt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LtU-op-Ows">
+                        <rect key="frame" x="72" y="56" width="216" height="17"/>
+                        <color key="textColor" red="0.60784313729999995" green="0.54901960780000003" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktY-KT-u5e">
+                        <rect key="frame" x="14" y="43" width="306" height="1"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="AYt-Ji-cfk"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="Rrf-5K-MkP">
+                        <rect key="frame" x="293" y="56" width="16" height="16"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chs-se-sBC" userLabel="drugName">
+                        <rect key="frame" x="76" y="8" width="236" height="35"/>
+                        <connections>
+                            <action selector="chooseName:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="75O-ka-V4C"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fda-Sq-Sj7" userLabel="drugCount">
+                        <rect key="frame" x="72" y="44" width="240" height="35"/>
+                        <connections>
+                            <action selector="chooseCount:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TkC-3v-pPG"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou3" translatesAutoresizingMaskIntoConstraints="NO" id="aaV-0e-nWK">
+                        <rect key="frame" x="293" y="14" width="15" height="15"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ktY-KT-u5e" firstAttribute="top" secondItem="chs-se-sBC" secondAttribute="bottom" id="0ZQ-cq-hhC"/>
+                    <constraint firstAttribute="bottom" secondItem="6mN-QY-S01" secondAttribute="bottom" constant="12" id="0gS-5J-JkU"/>
+                    <constraint firstItem="CGh-RO-tQo" firstAttribute="centerY" secondItem="YpJ-su-A3e" secondAttribute="centerY" id="2Vn-NY-Gbf"/>
+                    <constraint firstItem="ktY-KT-u5e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4Sr-rl-8HK"/>
+                    <constraint firstItem="Rrf-5K-MkP" firstAttribute="top" secondItem="LtU-op-Ows" secondAttribute="top" id="6eS-kD-sLz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fda-Sq-Sj7" secondAttribute="trailing" id="9dI-Wg-fTz"/>
+                    <constraint firstItem="ktY-KT-u5e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="CYQ-Cz-BEb"/>
+                    <constraint firstItem="fda-Sq-Sj7" firstAttribute="leading" secondItem="LtU-op-Ows" secondAttribute="leading" id="DYu-yn-5rN"/>
+                    <constraint firstItem="Rrf-5K-MkP" firstAttribute="leading" secondItem="LtU-op-Ows" secondAttribute="trailing" constant="5" id="LBM-dK-tEe"/>
+                    <constraint firstItem="YpJ-su-A3e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Lu4-9t-QBU"/>
+                    <constraint firstItem="chs-se-sBC" firstAttribute="leading" secondItem="CGh-RO-tQo" secondAttribute="leading" id="MKK-x4-V6A"/>
+                    <constraint firstItem="aaV-0e-nWK" firstAttribute="top" secondItem="CGh-RO-tQo" secondAttribute="top" id="OMZ-9i-Gsy"/>
+                    <constraint firstItem="YpJ-su-A3e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Qi5-uf-Z1K"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fda-Sq-Sj7" secondAttribute="bottom" id="Rkd-Hg-wH4"/>
+                    <constraint firstAttribute="trailing" secondItem="ktY-KT-u5e" secondAttribute="trailing" id="XRZ-je-QzI"/>
+                    <constraint firstItem="6mN-QY-S01" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="h7Z-Gq-2Kb"/>
+                    <constraint firstItem="CGh-RO-tQo" firstAttribute="leading" secondItem="YpJ-su-A3e" secondAttribute="trailing" constant="10" id="lq3-Zb-n4o"/>
+                    <constraint firstItem="aaV-0e-nWK" firstAttribute="leading" secondItem="CGh-RO-tQo" secondAttribute="trailing" constant="5" id="mjp-M6-ZIY"/>
+                    <constraint firstAttribute="topMargin" secondItem="chs-se-sBC" secondAttribute="top" id="np9-3r-5PP"/>
+                    <constraint firstItem="LtU-op-Ows" firstAttribute="centerY" secondItem="6mN-QY-S01" secondAttribute="centerY" id="ntk-vl-XGB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="chs-se-sBC" secondAttribute="trailing" id="qIX-c3-dqb"/>
+                    <constraint firstItem="fda-Sq-Sj7" firstAttribute="top" secondItem="ktY-KT-u5e" secondAttribute="bottom" id="rIa-QH-Ygn"/>
+                    <constraint firstAttribute="trailing" secondItem="LtU-op-Ows" secondAttribute="trailing" constant="32" id="t8w-l1-hYn"/>
+                    <constraint firstAttribute="trailing" secondItem="CGh-RO-tQo" secondAttribute="trailing" constant="32" id="yZv-8g-6ao"/>
+                    <constraint firstItem="LtU-op-Ows" firstAttribute="leading" secondItem="6mN-QY-S01" secondAttribute="trailing" constant="20" id="zIM-xP-wRe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineHeight" destination="AYt-Ji-cfk" id="LYf-Qf-fmy"/>
+                <outlet property="textField1" destination="CGh-RO-tQo" id="pun-U7-Xdq"/>
+                <outlet property="textField2" destination="LtU-op-Ows" id="rHS-v3-WUl"/>
+            </connections>
+            <point key="canvasLocation" x="337" y="304"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jiantou" width="16" height="16"/>
+        <image name="jiantou3" width="15" height="15"/>
+    </resources>
+</document>

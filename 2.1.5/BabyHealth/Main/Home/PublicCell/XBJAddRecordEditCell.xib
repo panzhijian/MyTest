@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XBJAddRecordEditCell" id="KGk-i7-Jjw" customClass="XBJAddRecordEditCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH9-LT-zrC">
+                        <rect key="frame" x="10" y="13" width="28" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mv4-Ct-SGJ">
+                        <rect key="frame" x="58" y="13" width="220" height="17"/>
+                        <color key="textColor" red="0.60784313729999995" green="0.54901960780000003" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="vFm-1k-9aG"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP4-KX-ouv">
+                        <rect key="frame" x="288" y="13" width="22" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="WGl-TE-l3R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.76078431369999999" green="0.67450980390000004" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WP4-KX-ouv" firstAttribute="leading" secondItem="Mv4-Ct-SGJ" secondAttribute="trailing" constant="10" id="Vv9-GG-xOR"/>
+                    <constraint firstItem="Mv4-Ct-SGJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="X0L-wq-iD2"/>
+                    <constraint firstItem="rH9-LT-zrC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="a11-b4-XFY"/>
+                    <constraint firstItem="rH9-LT-zrC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ceU-LF-Bq3"/>
+                    <constraint firstAttribute="trailing" secondItem="WP4-KX-ouv" secondAttribute="trailing" constant="10" id="l9K-ad-kTA"/>
+                    <constraint firstItem="Mv4-Ct-SGJ" firstAttribute="leading" secondItem="rH9-LT-zrC" secondAttribute="trailing" constant="20" id="oJi-ob-V53"/>
+                    <constraint firstItem="WP4-KX-ouv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tGi-Z5-jdV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="Mv4-Ct-SGJ" id="Ii0-gN-Nq5"/>
+                <outlet property="titleLabel" destination="rH9-LT-zrC" id="sF4-zS-ONX"/>
+                <outlet property="unitLabel" destination="WP4-KX-ouv" id="gyK-uD-2DK"/>
+            </connections>
+            <point key="canvasLocation" x="276" y="322.5"/>
+        </tableViewCell>
+    </objects>
+</document>

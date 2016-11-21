@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "bfba1307-1a01-8143-a346-3667ddf91923++6278",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "bfba1307-1a01-8143-a346-3667ddf91923++6278" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "bfba1307-1a01-8143-a346-3667ddf91923++6278" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "83A210D9-376D-4781-87A6-470DC1CD17FB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "bfba1307-1a01-8143-a346-3667ddf91923++6278" : "BabyHealth_iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BabyHealth",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BabyHealth.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/172.16.68.32",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bfba1307-1a01-8143-a346-3667ddf91923++6278"
+    }
+  ]
+}

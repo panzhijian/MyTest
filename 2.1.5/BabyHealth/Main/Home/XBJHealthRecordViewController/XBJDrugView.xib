@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pmw-wN-37c" customClass="XBJDrugView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apS-Ud-2Kg">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用药记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEV-C0-tU9">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图中表柱数字为当天服用药物的次数,双击可以放大或缩小" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsJ-rf-SzQ">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="d5R-NH-LaR"/>
+                                <constraint firstAttribute="width" constant="260" id="jca-4g-ZhI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.41999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="jca-4g-ZhI"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jlxqwarning" translatesAutoresizingMaskIntoConstraints="NO" id="lCy-4a-62z">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="4Hd-LP-YP2"/>
+                                <constraint firstAttribute="width" constant="10" id="wIu-H5-yJt"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5Z-jm-8eT" customClass="BarChartView" customModule="BabyHealth">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.31764705882352939" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="S5Z-jm-8eT" firstAttribute="leading" secondItem="apS-Ud-2Kg" secondAttribute="leading" constant="10" id="19T-zR-hhH"/>
+                        <constraint firstItem="lCy-4a-62z" firstAttribute="top" secondItem="apS-Ud-2Kg" secondAttribute="top" id="O4h-Sa-byk"/>
+                        <constraint firstItem="KsJ-rf-SzQ" firstAttribute="leading" secondItem="lCy-4a-62z" secondAttribute="trailing" constant="5" id="PXZ-Jc-PtT"/>
+                        <constraint firstAttribute="height" constant="246" id="WHZ-Qc-eEt"/>
+                        <constraint firstItem="lCy-4a-62z" firstAttribute="leading" secondItem="apS-Ud-2Kg" secondAttribute="leading" constant="10" id="XER-kW-359"/>
+                        <constraint firstItem="S5Z-jm-8eT" firstAttribute="top" secondItem="SEV-C0-tU9" secondAttribute="bottom" id="aPw-sv-iZK"/>
+                        <constraint firstItem="SEV-C0-tU9" firstAttribute="top" secondItem="apS-Ud-2Kg" secondAttribute="top" constant="10" id="ctX-le-3T2"/>
+                        <constraint firstAttribute="trailing" secondItem="S5Z-jm-8eT" secondAttribute="trailing" constant="10" id="ksd-VK-mTs"/>
+                        <constraint firstAttribute="bottom" secondItem="KsJ-rf-SzQ" secondAttribute="bottom" constant="8" id="maj-Tz-tYF"/>
+                        <constraint firstItem="KsJ-rf-SzQ" firstAttribute="centerX" secondItem="apS-Ud-2Kg" secondAttribute="centerX" id="pqh-4x-wyA"/>
+                        <constraint firstItem="KsJ-rf-SzQ" firstAttribute="centerX" secondItem="apS-Ud-2Kg" secondAttribute="centerX" id="sEZ-ce-D1J"/>
+                        <constraint firstItem="KsJ-rf-SzQ" firstAttribute="centerY" secondItem="lCy-4a-62z" secondAttribute="centerY" id="sJB-f2-klB"/>
+                        <constraint firstItem="SEV-C0-tU9" firstAttribute="leading" secondItem="apS-Ud-2Kg" secondAttribute="leading" constant="10" id="sev-2f-Fnt"/>
+                        <constraint firstItem="KsJ-rf-SzQ" firstAttribute="top" secondItem="S5Z-jm-8eT" secondAttribute="bottom" id="uCc-I8-f2c"/>
+                        <constraint firstItem="SEV-C0-tU9" firstAttribute="centerX" secondItem="apS-Ud-2Kg" secondAttribute="centerX" id="upy-g6-Cpm"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="0"/>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="pqh-4x-wyA"/>
+                            <exclude reference="O4h-Sa-byk"/>
+                            <exclude reference="XER-kW-359"/>
+                        </mask>
+                    </variation>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="LVr-H3-wlB">
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.91372549020000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.91372549020000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LVr-H3-wlB" firstAttribute="top" secondItem="apS-Ud-2Kg" secondAttribute="bottom" constant="10" id="0UP-QM-MZO"/>
+                <constraint firstItem="LVr-H3-wlB" firstAttribute="leading" secondItem="Pmw-wN-37c" secondAttribute="leading" id="MnM-98-4yS"/>
+                <constraint firstItem="apS-Ud-2Kg" firstAttribute="leading" secondItem="Pmw-wN-37c" secondAttribute="leading" id="Uab-y0-hsB"/>
+                <constraint firstItem="apS-Ud-2Kg" firstAttribute="top" secondItem="Pmw-wN-37c" secondAttribute="top" id="kxR-22-ocF"/>
+                <constraint firstAttribute="bottom" secondItem="LVr-H3-wlB" secondAttribute="bottom" id="qU8-hl-PNu"/>
+                <constraint firstAttribute="trailing" secondItem="LVr-H3-wlB" secondAttribute="trailing" id="rHK-5n-vbu"/>
+                <constraint firstAttribute="trailing" secondItem="apS-Ud-2Kg" secondAttribute="trailing" id="wIU-19-Tpm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chartBackHeight" destination="WHZ-Qc-eEt" id="QBb-Rj-x42"/>
+                <outlet property="chartBottomToTableView" destination="0UP-QM-MZO" id="LUh-0B-Pcp"/>
+                <outlet property="chartView" destination="S5Z-jm-8eT" id="CNh-nh-SeU"/>
+                <outlet property="drugRecodeLab" destination="SEV-C0-tU9" id="Sut-pR-tGe"/>
+                <outlet property="tableview" destination="LVr-H3-wlB" id="Kzb-J2-nhs"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="jlxqwarning" width="11" height="11"/>
+    </resources>
+</document>

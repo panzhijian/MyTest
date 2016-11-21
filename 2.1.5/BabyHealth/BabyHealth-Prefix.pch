@@ -1,0 +1,90 @@
+//
+//  BabyHealth-Prefix.pch
+//  BabyHealth
+//
+//  Created by 林全天 on 16/6/27.
+//  Copyright © 2016年 LinQuanTian. All rights reserved.
+//
+
+#ifndef BabyHealth_Prefix_h
+#define BabyHealth_Prefix_h
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "AFHTTPSessionManager.h"
+#import "Header.h"
+#import "UIView+Toast.h"
+#import "BabyHealth-Swift.h"
+#import "GGMacros.h"
+#import "XBJAppHelper.h"
+#import "MBProgressHUD.h"
+
+
+#endif /* BabyHealth_Prefix_h */
+
+#define VIEW_SIZE (self.view.frame.size)
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+//#define LAM_MATE_WIDTH(width) (width * SCREEN_WIDTH /320.0)
+#define AUTO_MATE_WIDTH(width) (width * SCREEN_WIDTH /750.0)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//#define LAM_MATE_HEIGHT(height) (height * SCREEN_HEIGHT /568.0)
+#define AUTO_MATE_HEIGHT(height) (height * SCREEN_HEIGHT /1334.0)
+
+
+#define LAM_WIDTH(x)(x)*SCREEN_WIDTH/750
+#define LAM_HEIGHT(x)(x)*SCREEN_HEIGHT/1334
+
+#define CELL_TXT_COLOR [UIColor colorWithRed:194.0f/255.0f green:172.0f/255.0f blue:180.0f/255.0f alpha:1]
+
+#define TXT_COLOR [UIColor colorWithRed:155.0f/255.0f green:140.0f/255.0f blue:145.0f/255.0f alpha:1]
+#define TXT_RED_COLOR [UIColor colorWithRed:255.0f/255.0f green:129.0f/255.0f blue:152.0f/255.0f alpha:1]
+
+#define BG_COLOR [UIColor colorWithRed:240.0f/255.0f green:233.0f/255.0f blue:237.0f/255.0f alpha:1]
+
+#define BG_COLOR2 [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1]
+
+#define ChartBG_COLOR [UIColor colorWithRed:247.0f/255.0f green:81.0f/255.0f blue:112.0f/255.0f alpha:1]   //表格背景颜色
+#define ChartLine_COLOR [UIColor colorWithRed:1 green:1 blue:1 alpha:0.4]//表线条颜色
+#define white_COLOR [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1]//白色
+
+#define BTN_COLOR [UIColor colorWithRed:254.0f/255.0f green:115.0f/255.0f blue:141.0f/255.0f alpha:1]
+
+#define ME_TXT_COLOR [UIColor colorWithRed:69.0f/255.0f green:62.0f/255.0f blue:64.0f/255.0f alpha:1]
+
+#define NAV_COLOR [UIColor colorWithRed:243.0f/255.0f green:110.0f/255.0f blue:137.0f/255.0f alpha:1]
+
+#define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define Juhua_BackGround_COLOR [UIColor colorWithRed:0.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:0.95]
+
+#define LONG_DATE_TIME_FORMAT @"yyyy-MM-dd HH:mm:ss"
+
+#define SHORT_DATE_TIME_FORMAT @"yyyy-MM-dd"
+
+#define SHORT_DATE_TIME_FORMAT_2 @"MM-dd"
+
+#define SHORT_DATE_TIME_FORMAT_1 @"yyyy-MM-dd HH:mm"
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [File %s: Line %d] " fmt), __PRETTY_FUNCTION__, __FILE__, __LINE__, ##__VA_ARGS__)
+#   define DLogRect(rect)  DLog(@"%@", NSStringFromCGRect(rect))
+#   define DLogPoint(pt) DLog(@"%@", NSStringFromCGPoint(pt))
+#   define DLogSize(size) DLog(@"%@", NSStringFromCGSize(size))
+#   define DLogColor(_COLOR) DLog(@"%s h=%f, s=%f, v=%f", #_COLOR, _COLOR.hue, _COLOR.saturation, _COLOR.value)
+#   define DLogSuperViews(_VIEW) { for (UIView* view = _VIEW; view; view = view.superview) { GBLog(@"%@", view); } }
+#   define DLogSubViews(_VIEW) \
+{ for (UIView* view in [_VIEW subviews]) { GBLog(@"%@", view); } }
+
+#   define ERROR_MESSAGE     [dic[@"message"] isKindOfClass:[NSString class]]?dic[@"message"]:@"网络错误"
+#   else
+#   define DLog(...)
+#   define DLogRect(rect)
+#   define DLogPoint(pt)
+#   define DLogSize(size)
+#   define DLogColor(_COLOR)
+#   define DLogSuperViews(_VIEW)
+#   define DLogSubViews(_VIEW)
+#   define ERROR_MESSAGE @"网络错误"
+#   endif
+
+// error.description

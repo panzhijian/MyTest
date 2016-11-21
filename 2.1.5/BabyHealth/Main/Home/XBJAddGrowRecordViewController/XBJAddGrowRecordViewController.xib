@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBJAddGrowRecordViewController">
+            <connections>
+                <outlet property="clearView" destination="5tx-Gu-jWa" id="vTg-cu-0XL"/>
+                <outlet property="datePicker" destination="Nej-M5-FZ0" id="t7Q-vh-vAx"/>
+                <outlet property="tableView" destination="201-l3-uQV" id="lNY-gh-wvP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="201-l3-uQV">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="HL9-wi-coF"/>
+                        <outlet property="delegate" destination="-1" id="JpY-ng-0CV"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tx-Gu-jWa">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeC-R5-ftV">
+                            <rect key="frame" x="0.0" y="352" width="320" height="216"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="216" id="h9y-Iq-FYa"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nej-M5-FZ0" customClass="UUDatePicker">
+                            <rect key="frame" x="0.0" y="352" width="320" height="216"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="216" id="Cs6-89-tbR"/>
+                                <constraint firstAttribute="width" secondItem="Nej-M5-FZ0" secondAttribute="height" multiplier="320:216" id="aN1-ng-hBd"/>
+                                <constraint firstAttribute="height" constant="220" id="dGd-24-BEa"/>
+                                <constraint firstAttribute="width" constant="320" id="dfb-dS-pZM"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="aN1-ng-hBd"/>
+                                    <exclude reference="dGd-24-BEa"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EeC-R5-ftV" secondAttribute="trailing" id="63l-v5-WYK"/>
+                        <constraint firstItem="Nej-M5-FZ0" firstAttribute="leading" secondItem="5tx-Gu-jWa" secondAttribute="leading" id="71E-Dj-gk2"/>
+                        <constraint firstItem="EeC-R5-ftV" firstAttribute="leading" secondItem="5tx-Gu-jWa" secondAttribute="leading" id="P4u-X9-Z8m"/>
+                        <constraint firstAttribute="bottom" secondItem="Nej-M5-FZ0" secondAttribute="bottom" id="QzU-WL-jkY"/>
+                        <constraint firstAttribute="trailing" secondItem="Nej-M5-FZ0" secondAttribute="trailing" id="RZe-lM-Ohc"/>
+                        <constraint firstAttribute="bottom" secondItem="EeC-R5-ftV" secondAttribute="bottom" id="jkI-n6-bgC"/>
+                        <constraint firstItem="Nej-M5-FZ0" firstAttribute="centerX" secondItem="5tx-Gu-jWa" secondAttribute="centerX" id="lxQ-Mv-Ldp"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="71E-Dj-gk2"/>
+                            <exclude reference="RZe-lM-Ohc"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5tx-Gu-jWa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5ql-UM-WYl"/>
+                <constraint firstAttribute="trailing" secondItem="201-l3-uQV" secondAttribute="trailing" id="8jq-ES-gwr"/>
+                <constraint firstItem="5tx-Gu-jWa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E22-Gf-Jqh"/>
+                <constraint firstAttribute="bottom" secondItem="201-l3-uQV" secondAttribute="bottom" id="Ual-dM-NDZ"/>
+                <constraint firstItem="201-l3-uQV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XJg-I9-556"/>
+                <constraint firstAttribute="trailing" secondItem="5tx-Gu-jWa" secondAttribute="trailing" id="scc-R7-4pq"/>
+                <constraint firstItem="201-l3-uQV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="vhI-aL-dol"/>
+                <constraint firstAttribute="bottom" secondItem="5tx-Gu-jWa" secondAttribute="bottom" id="zia-M4-hME"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

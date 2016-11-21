@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XBJInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwZ-SF-0HH">
+                    <rect key="frame" x="0.0" y="61" width="320" height="507"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.91372549020000005" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <string key="text">      “生长发育曲线”是医学专家们选定一群生长发育正常的宝宝，记录他们的生长数据，将数据经过科学分析处理后形成的线图。我是宝宝中的生长发育曲线来自2009年卫生部对外发布的《中国七岁以下儿童生长发育参照标准》。
+
+      图上的五条暗线为卫生部颁布的参考曲线。中间50%线代表平均值。最下面3%线表示为有3%的宝宝将低于这个水平，可能存在生长发育迟缓；最上面97%线表示有3%的婴幼儿高于这一水平，可能存在生长过速。
+
+      生长曲线位于3%和97%之间的都是正常范围，大多数的宝宝的生长曲线在50%线附近。生长曲线位于线85%和线97%之间的宝宝生长发育为中等偏上，位于线3%和15%之间的宝宝生长发育为中等偏下。
+
+      生长曲线代表的是孩子的生长发育趋势，需要动态且连续性观察，仅靠某一个点的数据来判断孩子发育是否正常，是不准确的。所以，建议家长每个月记录一次宝宝的身高、体重、头围，及时了解孩子的成长动态。
+
+      宝宝的生长发育存在个体差异，受家族遗传、营养状况、身体疾病、生活环境等多因素的影响，所以生长曲线只要平均趋势符合都是正常情况。如果短期内的波动偏离正常曲线范围，也不用过度担心，进一步向专业医生寻求指导和帮助。
+</string>
+                    <color key="textColor" red="0.60784313729999995" green="0.54901960780000003" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“生长发育曲线”说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mL-pF-eyg">
+                    <rect key="frame" x="88" y="31" width="144" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.91372549020000005" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0mL-pF-eyg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AUn-7H-IF0"/>
+                <constraint firstItem="TwZ-SF-0HH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="J43-29-fSK"/>
+                <constraint firstItem="0mL-pF-eyg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="Qd8-Hp-gO5"/>
+                <constraint firstAttribute="bottom" secondItem="TwZ-SF-0HH" secondAttribute="bottom" id="WvQ-Vd-odQ"/>
+                <constraint firstAttribute="trailing" secondItem="TwZ-SF-0HH" secondAttribute="trailing" id="YtH-V2-0Tt"/>
+                <constraint firstItem="TwZ-SF-0HH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="sFU-gA-GiA"/>
+                <constraint firstItem="TwZ-SF-0HH" firstAttribute="top" secondItem="0mL-pF-eyg" secondAttribute="bottom" constant="10" id="u3L-ss-y76"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="sFU-gA-GiA"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="textView" destination="TwZ-SF-0HH" id="tFI-5u-nyf"/>
+            </connections>
+        </view>
+    </objects>
+</document>
