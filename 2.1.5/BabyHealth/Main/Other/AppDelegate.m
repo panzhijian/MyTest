@@ -46,7 +46,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-        [Fabric with:@[[Crashlytics class]]];
+//        [Fabric with:@[[Crashlytics class]]];
     
     [UMSocialData setAppKey:UMENG_KEY];
     UMConfigInstance.appKey = UMENG_KEY;
